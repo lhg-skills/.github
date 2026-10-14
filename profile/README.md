@@ -44,7 +44,7 @@ Every skill is plain process Markdown — no dependency on any agent platform �
 
 ## 姊妹组织
 
-以下四个组织同属刘洪光，互相导流：
+刘洪光的其他组织：
 
 | 组织 | 定位 |
 |---|---|
