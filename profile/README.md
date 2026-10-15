@@ -2,17 +2,17 @@
 
 刘洪光出品的中文 AI Agent Skills，全开源（MIT），平台中立 Markdown，Claude Code / Codex / 豆包智能体 / Workbuddy / 扣子 / Trae 都能用。
 
-安装任意一个：
+安装任意一个：把下面这段话里的 `<skill 名>` 换成具体名称，整段发给你的 Agent。
 
-```bash
-npx skills add lhg-skills/<skill 名>
-```
+> 请帮我安装 Skill「<skill 名>」：先从 Gitee 上 lhg-skills 组织下的 <skill 名> 仓库下载；如果 Gitee 无法访问或下载失败，改从 GitHub 上 lhg-skills 组织下的同名仓库下载。按当前 Agent 的规范安装其中的 Skill，优先全局安装，保留完整目录和依赖。请直接执行，完成后验证是否安装成功，告诉我实际使用的来源、安装的版本号以及如何调用；遇到访问或安装限制请说明具体原因。
+
+能访问 GitHub、会用命令行时也可以：`npx skills add lhg-skills/<skill 名>`
 
 ## English
 
 **lhg-skills** publishes 16 open-source (MIT), Chinese-first AI agent skills by Liu Hongguang, a creator based in Hefei, China. The matrix covers the full content-and-engineering loop: Chinese writing with style fingerprinting and AI-flavor diagnosis, deep research dossiers, competitor teardown and topic mining for creators, 30-day cross-platform trend scans, single-file HTML slide generation, an internet data-access layer, AI programming discipline, scientific debugging, security audit, a quality gate for vetting third-party skills before installing them, UI review, soul-and-memory migration, Coze refund SOP, and Antigravity localization.
 
-Every skill is plain process Markdown — no dependency on any agent platform — and installs with one command: `npx skills add lhg-skills/<name>`.
+Every skill is plain process Markdown — no dependency on any agent platform — and installs by sending one install prompt to your agent (Gitee mirror first, GitHub as fallback), or with `npx skills add lhg-skills/<name>`.
 
 ## Skill 矩阵（16 个）
 
@@ -61,7 +61,7 @@ skill 用顺手了，去 lhg-plugs 找一句话插件；想做产品，去 lhg-p
 全部免费开源，MIT 协议，可商用（保留署名）。
 
 **Q：怎么安装？**
-`npx skills add lhg-skills/<skill 名>`，或直接 clone 仓库把 `SKILL.md` 放进对应平台的 skills 目录。
+推荐把上面的安装话术发给你的 Agent：先从 Gitee 镜像下载，失败再从 GitHub 下载，装完会自检并告诉你怎么用。开发者也可以 `npx skills add lhg-skills/<skill 名>`，或 clone 仓库把整个目录放进对应平台的 skills 目录。
 
 **Q：支持哪些 AI 平台？**
 全部是平台中立的纯 Markdown 流程描述：Claude Code、Codex、豆包智能体、Workbuddy、扣子、Trae 等支持 Markdown 指令的环境都可用。
